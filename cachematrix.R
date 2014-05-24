@@ -4,9 +4,7 @@
 ## Write a short comment describing this function
 #This function creates an object with 4 methods,
 #get and set for the original matrix, and getInverse setInverse to return calculated inverse
-#The calculated inverse is the result from cacheSolve, where you have to pass the object
-#and its get the inverse, if the inverse is null it calculates it and save it to the object
-#with the setInverse, but it exists, then just return it with getInverse
+
 #Remember for caching putting double <,  <<
 
 #This Code is for testing
@@ -39,6 +37,9 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## Write a short comment describing this function
+#The calculated inverse is the result from cacheSolve, where you have to pass the object
+#and its get the inverse, if the inverse is null it calculates it and save it to the object
+#with the setInverse, but it exists, then just return it with getInverse
 
 cacheSolve <- function(x) {
         ## Return a matrix that is the inverse of 'x'
@@ -55,3 +56,4 @@ cacheSolve <- function(x) {
         x$setInverse(iMatrix)
         iMatrix
 }
+
